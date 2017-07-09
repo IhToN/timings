@@ -25,6 +25,7 @@ class Log {
 		$f = fopen($_SERVER['DOCUMENT_ROOT'] . '/timings.log', 'a+');
 		foreach ($str as $line) {
 			$log = $_SERVER['REMOTE_ADDR'] . ":" . getmypid() . "\t[" . date(DATE_W3C) . "]\t$line\n";
+			error_log ($log);
 			fwrite($f, $log);
 		}
 		fclose($f);
