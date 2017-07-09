@@ -34,5 +34,5 @@ gulp.task('default', () => {
 });
 
 gulp.task('heroku:production', function(){
-  runSeq('clean', 'build', 'minify')
+  runSeq('build:prod'')
 })
