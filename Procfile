@@ -1,1 +1,1 @@
-web: node node_modules/gulp/bin/gulp
+web: heroku-php-apache2 && gulp default
