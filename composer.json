@@ -11,7 +11,8 @@
     "require": {
         "brandonwamboldt/utilphp": "^1.1",
         "davedevelopment/stiphle": "dev-master",
-		"gd": "*"
+		"ext-memcached": "*",
+		"ext-gd": "*"
     },
     "autoload": {
         "psr-4": {
