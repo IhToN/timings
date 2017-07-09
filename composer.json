@@ -10,7 +10,8 @@
     ],
     "require": {
         "brandonwamboldt/utilphp": "^1.1",
-        "davedevelopment/stiphle": "dev-master"
+        "davedevelopment/stiphle": "dev-master",
+		"ext-gd": "*"
     },
     "autoload": {
         "psr-4": {
