@@ -9,11 +9,8 @@
         }
     ],
     "require": {
-		"php": "^5.6.0",
         "brandonwamboldt/utilphp": "^1.1",
-        "davedevelopment/stiphle": "dev-master",
-		"ext-memcached": "*",
-		"ext-gd": "*"
+        "davedevelopment/stiphle": "dev-master"
     },
     "autoload": {
         "psr-4": {
