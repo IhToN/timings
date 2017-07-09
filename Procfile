@@ -1,1 +1,1 @@
-web: yarn init
+web: node node_modules/gulp/bin/gulp build
