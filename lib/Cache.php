@@ -24,9 +24,9 @@ class Cache {
 	 * @return null|string
 	 */
 	public static function get($key, $type = 'timings') {
-		$file = self::getFile($key, $type);
+		$file = self::getFile($key, $type, $_SERVER['DOCUMENT_ROOT']);
 		if (!file_exists($file)) {
-			$file = self::getFile($key, $type, ROOT_DIR);
+			$file = self::getFile($key, $type, $_SERVER['DOCUMENT_ROOT']);
 		}
 		if (file_exists($file)) {
 			if (is_writable($file)) {
@@ -48,7 +48,7 @@ class Cache {
 	 * @param string $type
 	 */
 	public static function put($key, $data, $type = 'timings') {
-		$file = self::getFile($key, $type);
+		$file = self::getFile($key, $type, $_SERVER['DOCUMENT_ROOT']);
 		file_put_contents($file, gzencode($data));
 	}
 
@@ -92,7 +92,7 @@ class Cache {
 
 		global $ini;
 		if (\is_null($dir)) {
-			$dir = $ini["tmp_path"];
+			$dir = $_SERVER['DOCUMENT_ROOT'];
 		}
 		return $dir . "/${type}_${key}.gz";
 	}
