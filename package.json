@@ -4,6 +4,7 @@
     "description": "Aikar's Minecraft Timings Viewer",
     "main": "index.js",
     "scripts": {
+		"preinstall ": "yarn",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
