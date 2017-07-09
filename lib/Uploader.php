@@ -30,7 +30,7 @@ class Uploader {
 		$json = json_decode($data, true);
 		$security->validateJson($json);
 
-		if (isset($json['icon'])) {
+		/*if (isset($json['icon'])) {
 			$img = self::getServerIcon($json['icon']);
 			$json['icon'] = $img;
 			Log::info("Valid Image: $img");
@@ -38,7 +38,7 @@ class Uploader {
 			$uncompressedSize = strlen($data);
 		} else {
 
-		}
+		}*/
 		$key = util::uuid(false);
 
 		$cacheFile = Cache::getFile($key);
