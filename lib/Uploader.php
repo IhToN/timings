@@ -50,7 +50,7 @@ class Uploader {
 
 	public static function getServerIcon($base64) {
 		$base64 = substr($base64, strlen("data:image/png;base64,"));
-		$img = @imagecreatefromstring(base64_decode($base64));
+		$img = \imagecreatefromstring(base64_decode($base64));
 		if (!$img) {
 			Log::info("Bad Image");
 
