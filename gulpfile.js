@@ -32,3 +32,7 @@ gulp.task('default', () => {
   let config = webpackConfig(process.env.NODE_ENV === "production", true);
   webpack(config, config.reporter());
 });
+
+gulp.task('heroku:production', function(){
+  runSeq('clean', 'build', 'minify')
+})
