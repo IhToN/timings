@@ -70,10 +70,7 @@
         "webpack-dev-server": "^1.16.2",
         "xhr": "^2.3.3"
     },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/aikar/timings"
-    },
+    "repository": "git://github.com/aikar/timings",
     "author": "Daniel Ennis <aikar@aikar.co>",
     "license": "MIT",
     "bugs": {
